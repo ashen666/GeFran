@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_toolbar" />
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/background_color"
+	    android:fadingEdge="vertical"
+	    android:paddingBottom="10dp"
+	    android:paddingTop="20dp"
+	    android:scrollbars="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:scrollbars="vertical" >
+
+
+
+			<!-- 湿度(数值只读) -->
+
+<RelativeLayout
+	android:layout_width="match_parent"
+	android:background="@color/white"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/image_text"
+		android:layout_width="350dp"
+		android:layout_height="350dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/net" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="温度 (C°)"
+		android:layout_centerHorizontal="true"
+		android:textColor="@color/gray"
+		android:gravity="center"
+		android:layout_marginLeft="80dp"
+		android:layout_marginTop="40dp"
+		android:textSize="23sp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="湿度（%RH）"
+		android:layout_centerHorizontal="true"
+		android:textColor="@color/gray"
+		android:gravity="center"
+		android:layout_marginLeft="80dp"
+		android:layout_marginTop="280dp"
+		android:textSize="23sp"/>
+	<TextView
+
+
+		android:id="@+id/tv_data_Temperature"
+		android:layout_width="130dp"
+		android:layout_height="100dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="95dp"
+		android:layout_marginRight="215dp"
+		android:gravity="center"
+		android:textColor="@color/gray"
+		android:textSize="45sp" />
+
+
+	<TextView
+
+		android:id="@+id/tv_data_Humidity"
+		android:layout_width="130dp"
+		android:layout_height="100dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="160dp"
+		android:layout_marginRight="215dp"
+		android:gravity="center"
+		android:textColor="@color/gray"
+		android:textSize="45sp" />
+
+
+	<TextView
+		android:id="@+id/te_text1"
+		android:layout_width="110dp"
+		android:layout_height="80dp"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="230dp"
+		android:layout_marginTop="180dp"
+		android:gravity="center"
+		android:textColor="@color/gray"
+		android:textSize="35sp" />
+
+	<TextView
+		android:id="@+id/te_text"
+		android:layout_width="110dp"
+		android:layout_height="80dp"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="230dp"
+		android:layout_marginTop="100dp"
+		android:gravity="center"
+		android:textColor="@color/gray"
+		android:textSize="35sp"/>
+
+
+
+	<ImageView
+	android:layout_width="310dp"
+	android:layout_height="5dp"
+	android:layout_centerVertical="true"
+	android:layout_centerHorizontal="true"
+	android:background="@drawable/one2"/>
+
+</RelativeLayout>
+
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+
+
+
+				<CheckBox
+					android:id="@+id/sw_bool_Refrigeration"
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:layout_marginLeft="0dp"
+					android:layout_marginTop="35dp"
+					android:background="@drawable/bt_refrigerration"
+					android:button="@null" />
+
+				<CheckBox
+					android:id="@+id/sw_bool_Heating"
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:button="@null"
+					android:layout_marginTop="35dp"
+					android:layout_marginLeft="80dp"
+					android:background="@drawable/bt_heating"/>
+				<CheckBox
+					android:id="@+id/sw_bool_Humidification"
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:layout_alignParentRight="true"
+					android:layout_marginTop="35dp"
+					android:layout_marginRight="0dp"
+					android:background="@drawable/humidification_bt"
+					android:button="@null" />
+
+				<CheckBox
+					android:id="@+id/sw_bool_Arefaction"
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:button="@null"
+					android:layout_marginTop="35dp"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="80dp"
+					android:background="@drawable/areraction_bt"/>
+				<TextView
+					android:layout_width="50dp"
+					android:layout_height="30dp"
+					android:text="制冷"
+					android:gravity="center"
+					android:layout_marginLeft="5dp"
+					android:layout_marginTop="90dp"
+					android:textSize="16sp"/>
+				<TextView
+					android:layout_width="50dp"
+					android:layout_height="30dp"
+					android:text="制热"
+					android:gravity="center"
+					android:layout_marginLeft="80dp"
+					android:layout_marginTop="90dp"
+					android:textSize="16sp"/>
+				<TextView
+					android:layout_width="50dp"
+					android:layout_height="30dp"
+					android:text="加湿"
+
+					android:gravity="center"
+					android:layout_alignParentRight="true"
+					android:layout_marginTop="90dp"
+					android:layout_marginRight="3dp"
+					android:textSize="16sp"/>
+				<TextView
+					android:layout_width="50dp"
+					android:layout_height="30dp"
+					android:text="除湿"
+					android:gravity="center"
+					android:layout_alignParentRight="true"
+					android:layout_marginTop="90dp"
+					android:layout_marginRight="80dp"
+					android:textSize="16sp"/>
+			</RelativeLayout>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+
+				<CheckBox
+					android:id="@+id/sw_bool_Manual_Auto"
+					android:layout_width="70dp"
+					android:layout_height="70dp"
+					android:button="@null"
+					android:layout_centerVertical="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="0dp"
+					android:background="@drawable/bt_auto"
+					/>
+
+
+			</RelativeLayout>
+			<!-- 状态(枚举只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+
+
+
+
+				 <TextView
+					 android:id="@+id/te_text2"
+					 android:layout_width="110dp"
+					 android:layout_height="wrap_content"
+					 android:layout_centerHorizontal="true"
+					 android:textColor="@color/gray"
+					 android:gravity="center"
+					 android:textSize="16sp"/>
+
+			</RelativeLayout>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+				<CheckBox
+
+					android:layout_width="70dp"
+					android:layout_height="70dp"
+					android:button="@null"
+					android:layout_centerVertical="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="0dp"
+					android:background="@drawable/alarm"
+					/>
+
+
+				<Spinner
+					android:id="@+id/sp_enum_Manual_Auto_status"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:textColor="@color/gray"
+					android:textSize="16sp"/>
+				<Spinner
+					android:id="@+id/sp_enum_Dehumidification"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:textColor="@color/gray"
+					android:textSize="16sp"/>
+				<Spinner
+					android:id="@+id/sp_enum_AirConditioning"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+					android:textColor="@color/gray"
+					android:textSize="16sp"/>
+
+			</RelativeLayout>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

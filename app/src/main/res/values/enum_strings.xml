@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="enum_Manual_Auto_status">
+        <item>自动 </item>
+        <item>手动 </item>
+    </string-array>
+    <string-array name="enum_Dehumidification">
+        <item>恒湿 </item>
+        <item>加湿 </item>
+        <item>除湿 </item>
+        <item>停湿 </item>
+    </string-array>
+    <string-array name="enum_AirConditioning">
+        <item>恒温 </item>
+        <item>制热 </item>
+        <item>制冷 </item>
+        <item>停温 </item>
+    </string-array>
+	
+</resources>
